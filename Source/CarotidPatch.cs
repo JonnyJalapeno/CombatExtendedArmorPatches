@@ -4,25 +4,28 @@ using Verse;
 
 namespace CombatExtendedArmorPatches
 {
-    [HarmonyPatch(typeof(DamageWorker_AddInjury), nameof(DamageWorker_AddInjury.Apply))]
-    static class DamageWorker_AddInjury_Apply_Patch
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
+    internal static class Harmony_DamageWorker_AddInjury_ApplyDamageToPart
     {
-        private static readonly HediffDef carotidHediffDef = 
+        private static readonly HediffDef carotidHediffDef =
             DefDatabase<HediffDef>.GetNamed("CarotidDamageHediffDef", false);
 
         [HarmonyPostfix]
-        static void Postfix(DamageInfo dinfo, Thing thing)
+        static void Postfix(Pawn pawn, DamageWorker.DamageResult result)
         {
-            if (!(thing is Pawn pawn) || dinfo.HitPart == null || carotidHediffDef == null)
+            if (carotidHediffDef == null || pawn == null || result == null)
                 return;
 
-            if (dinfo.HitPart.def.defName != "CarotidArtery")
-                return;
+            foreach (var part in result.LastHitPart.parts)
+            {
+                if (part?.def?.defName != "CarotidArtery")
+                    continue;
 
-            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(carotidHediffDef, false)
-                         ?? pawn.health.AddHediff(carotidHediffDef, dinfo.HitPart);
+                var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(carotidHediffDef, false)
+                             ?? pawn.health.AddHediff(carotidHediffDef, part);
 
-            hediff.Severity = CarotidUtils.CalculateSeverityForPart(dinfo.HitPart, pawn);
+                hediff.Severity = CarotidUtils.CalculateSeverityForPart(part, pawn);
+            }
         }
     }
 }

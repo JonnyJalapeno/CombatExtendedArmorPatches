@@ -22,7 +22,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
+            <offset>-0.15</offset>
           </li>
         </capMods>
       </li>
@@ -32,7 +32,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
+            <offset>-0.3</offset>
           </li>
         </capMods>
       </li>
@@ -42,22 +42,17 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.6</offset>
+            <offset>-0.45</offset>
           </li>
         </capMods>
       </li>
       <li>
         <minSeverity>0.60</minSeverity>
         <label>extreme</label>
-        <lifeThreatening>true</lifeThreatening>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.8</offset>
-          </li>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
+            <offset>-0.6</offset>
           </li>
         </capMods>
       </li>

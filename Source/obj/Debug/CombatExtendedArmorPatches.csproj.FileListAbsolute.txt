@@ -7,3 +7,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorP
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.sourcelink.json
