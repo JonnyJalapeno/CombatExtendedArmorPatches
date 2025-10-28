@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>50</MaxHitPoints>
+              <Flammability>1</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>4000</WorkToMake>
+              <Mass>0.05</Mass>
+              <StuffEffectMultiplierArmor>0.08</StuffEffectMultiplierArmor>
+              <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+              <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+              <EquipDelay>0.5</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <SocialImpact>0.1</SocialImpact>
+              <TradePriceImprovement>0.05</TradePriceImprovement>
+              <NegotiationAbility>0.05</NegotiationAbility>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

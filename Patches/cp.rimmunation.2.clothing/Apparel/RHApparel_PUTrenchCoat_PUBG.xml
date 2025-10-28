@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>260</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>2.3</Mass>
+              <StuffEffectMultiplierArmor>6</StuffEffectMultiplierArmor>
+              <Bulk>7.5</Bulk>
+              <WornBulk>3</WornBulk>
+              <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+              <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+              <EquipDelay>3</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>UpperChest</li>
+              <li>Neck</li>
+              <li>Shoulders</li>
+              <li>Arms</li>
+              <li>Legs</li>
+              <li>Waist</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

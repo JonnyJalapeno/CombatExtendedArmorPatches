@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JDS] EFT Apparel</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>8.5</Mass>
+              <Bulk>15</Bulk>
+              <WornBulk>5</WornBulk>
+              <ArmorRating_Sharp>16</ArmorRating_Sharp>
+              <ArmorRating_Blunt>80</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.27</ArmorRating_Heat>
+              <Insulation_Cold>1</Insulation_Cold>
+              <EquipDelay>4.5</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <MedicalTendSpeed>0.05</MedicalTendSpeed>
+              <CarryBulk>15</CarryBulk>
+              <ReloadSpeed>0.1</ReloadSpeed>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>UpperChest</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel/layers</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel</xpath>
+            <value>
+              <layers />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_ANA_Tactical_M1_rig"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>Middle</li>
+              <li>Webbing</li>
+            </layers>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

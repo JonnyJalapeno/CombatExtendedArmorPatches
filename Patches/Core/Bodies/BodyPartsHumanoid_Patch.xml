@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Original CE overwrites -->
+  
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/BodyPartDef[defName="Torso"]/hitPoints</xpath>
+			<value>
+				<hitPoints>50</hitPoints>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/BodyPartDef[defName="Torso" or defName="Shoulder" or defName="Arm" or defName="Hand" or defName="Waist"]</xpath>
+			<value>
+				<bleedRate>1.0</bleedRate>
+			</value>
+		</Operation>
+  
+  
+	  <!-- My stuff -->
+	  <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/BodyPartDef[defName='Waist']</xpath>
+		<value>
+		  <BodyPartDef>
+			<defName>Waist</defName>
+			<label>abdomen</label>
+			<hitPoints>50</hitPoints>
+			<skinCovered>true</skinCovered>
+			<canScarify>true</canScarify>
+			<bleedRate>1.5</bleedRate>
+			<tags>
+				<li>WaistIsVital</li>
+			</tags>
+		  </BodyPartDef>
+		</value>
+	  </Operation>
+	  
+	  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs</xpath>
+		<value>
+		   <BodyPartDef>
+			<defName>Hip</defName>
+			<label>hip</label>
+			<hitPoints>40</hitPoints>
+			<skinCovered>true</skinCovered>
+			<canScarify>true</canScarify>
+			<bleedRate>1.5</bleedRate>
+			<tags>
+			  <li>MovingLimbSegment</li>
+			  <li>Mirrored</li>
+			</tags>
+		  </BodyPartDef>
+		</value>
+	  </Operation>
+  
+    <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+		 <BodyPartDef>
+			<defName>HipBone</defName>
+			<label>hip bone</label>
+			<hitPoints>25</hitPoints>
+			<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+			<skinCovered>false</skinCovered>
+			<solid>true</solid>
+			<bleedRate>0</bleedRate>
+			<tags>
+			  <li>MovingLimbSegment</li>
+			  <li>Mirrored</li>
+			</tags>
+		  </BodyPartDef>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>Thigh</defName>
+		<label>thigh</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+		<tags>
+		  <li>MovingLimbCore</li>
+		  <li>Mirrored</li>
+		</tags>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>Calf</defName>
+		<label>calf</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+		<tags>
+		  <li>MovingLimbSegment</li>
+		  <li>Mirrored</li>
+		</tags>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>UpperArm</defName>
+		<label>upper arm</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+		<tags>
+		  <li>ManipulationLimbSegment</li>
+		  <li>Mirrored</li>
+		</tags>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>Groin</defName>
+		<label>groin</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>Genitals</defName>
+		<label>genitals</label>
+		<hitPoints>10</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/BodyPartDef[defName='Torso']/label</xpath>
+	<value>
+	  <label>chest</label>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/BodyPartDef[defName='Arm']/label</xpath>
+	<value>
+	  <label>lower arm</label>
+	</value>
+  </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/BodyPartDef[defName='Pelvis']/label</xpath>
+      <value>
+        <label>hip bone</label>
+      </value>
+    </Operation>
+	
+</Patch>

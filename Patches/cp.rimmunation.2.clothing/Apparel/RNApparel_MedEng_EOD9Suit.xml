@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.15</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>30</Mass>
+              <ArmorRating_Sharp>8</ArmorRating_Sharp>
+              <ArmorRating_Blunt>80</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.5</ArmorRating_Heat>
+              <Insulation_Cold>20</Insulation_Cold>
+              <EquipDelay>12</EquipDelay>
+              <Bulk>60</Bulk>
+              <WornBulk>25</WornBulk>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+              <MeleeHitChance>-0.25</MeleeHitChance>
+              <AimingDelayFactor>0.15</AimingDelayFactor>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

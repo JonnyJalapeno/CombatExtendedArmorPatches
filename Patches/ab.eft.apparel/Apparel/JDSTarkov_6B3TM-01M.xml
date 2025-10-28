@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JDS] EFT Apparel</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>9.5</Mass>
+              <Bulk>27</Bulk>
+              <WornBulk>9</WornBulk>
+              <ArmorRating_Sharp>14</ArmorRating_Sharp>
+              <ArmorRating_Blunt>67</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.27</ArmorRating_Heat>
+              <Insulation_Cold>1</Insulation_Cold>
+              <EquipDelay>4.5</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats>
+                <li>
+                  <ArmorRating_Sharp>0.429</ArmorRating_Sharp>
+                  <parts>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Neck</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                    <li>Shoulder</li>
+                  </parts>
+                </li>
+                <li>
+                  <ArmorRating_Blunt>0.429</ArmorRating_Blunt>
+                  <parts>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Neck</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                    <li>Shoulder</li>
+                  </parts>
+                </li>
+              </stats>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <MedicalTendSpeed>0.05</MedicalTendSpeed>
+              <CarryBulk>10</CarryBulk>
+              <ReloadSpeed>0.1</ReloadSpeed>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Waist</li>
+              <li>Neck</li>
+              <li>UpperChest</li>
+              <li>Shoulders</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel/layers</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel</xpath>
+            <value>
+              <layers />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_6B3TM-01M"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>Middle</li>
+              <li>Webbing</li>
+            </layers>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

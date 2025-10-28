@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JDS] EFT Apparel</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.4</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <MarketValue>400</MarketValue>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>2</Mass>
+              <Insulation_Cold>6</Insulation_Cold>
+              <EquipDelay>0.5</EquipDelay>
+              <Bulk>20</Bulk>
+              <WornBulk>0</WornBulk>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <CarryBulk>35</CarryBulk>
+              <AimingDelayFactor>0.1</AimingDelayFactor>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Shoulders</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel/layers</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel</xpath>
+            <value>
+              <layers />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Backpack_Beta2Bag"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>Backpack</li>
+            </layers>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

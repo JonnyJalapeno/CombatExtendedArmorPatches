@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Original CE overwrite -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Heart" or defName="Lung"]/hitPoints</xpath>
+		<value>
+			<hitPoints>20</hitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Heart"]/bleedRate</xpath>
+		<value>
+			<bleedRate>20</bleedRate>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Lung"]</xpath>
+		<value>
+			<bleedRate>5</bleedRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Kidney"]</xpath>
+		<value>
+			<bleedRate>5</bleedRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Liver"]</xpath>
+		<value>
+			<bleedRate>10</bleedRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Stomach"]/hitPoints</xpath>
+		<value>
+			<hitPoints>25</hitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Stomach"]</xpath>
+		<value>
+			<bleedRate>3.5</bleedRate>
+		</value>
+	</Operation>
+
+	<!-- ========== Modify old injury chance ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Heart" or defName="Lung" or defName="Kidney" or defName="Liver" or defName="Stomach"]</xpath>
+		<value>
+			<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		</value>
+	</Operation>	
+	
+    <!-- Add Spleen -->
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartDef>
+          <defName>Spleen</defName>
+          <label>spleen</label>
+          <hitPoints>15</hitPoints>
+          <skinCovered>false</skinCovered>
+		  <bleedRate>8.5</bleedRate>
+		  <permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+          <tags>
+            <li>MetabolismSource</li>
+          </tags>
+          <spawnThingOnRemoved>Spleen</spawnThingOnRemoved>
+          <canSuggestAmputation>false</canSuggestAmputation>
+        </BodyPartDef>
+      </value>
+    </Operation>
+
+    <!-- Add Pancreas -->
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartDef>
+          <defName>Pancreas</defName>
+          <label>pancreas</label>
+          <hitPoints>15</hitPoints>
+          <skinCovered>false</skinCovered>
+		  <bleedRate>3.5</bleedRate>
+		  <permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+          <tags>
+            <li>MetabolismSource</li>
+          </tags>
+          <spawnThingOnRemoved>Pancreas</spawnThingOnRemoved>
+          <canSuggestAmputation>false</canSuggestAmputation>
+        </BodyPartDef>
+      </value>
+    </Operation>
+
+    <!-- Add Gallbladder -->
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartDef>
+          <defName>Gallbladder</defName>
+          <label>gallbladder</label>
+          <hitPoints>10</hitPoints>
+          <skinCovered>false</skinCovered>
+		  <bleedRate>2.0</bleedRate>
+		  <permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+          <tags>
+            <li>MetabolismSource</li>
+          </tags>
+          <spawnThingOnRemoved>Gallbladder</spawnThingOnRemoved>
+          <canSuggestAmputation>false</canSuggestAmputation>
+        </BodyPartDef>
+      </value>
+    </Operation>
+
+    <!-- Add Intestines -->
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartDef>
+          <defName>Intestines</defName>
+          <label>intestines</label>
+          <hitPoints>25</hitPoints>
+          <skinCovered>false</skinCovered>
+		  <bleedRate>2.0</bleedRate>
+		  <permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+          <tags>
+            <li>MetabolismSource</li>
+          </tags>
+          <spawnThingOnRemoved>Intestines</spawnThingOnRemoved>
+          <canSuggestAmputation>false</canSuggestAmputation>
+        </BodyPartDef>
+      </value>
+    </Operation>
+	
+	<!-- Add Aortas and Arteries -->
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>AbdominalAorta</defName>
+		<label>abdominal aorta</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>36</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>ThoracicAorta</defName>
+		<label>thoracic aorta</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>40</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>IliacArtery</defName>
+		<label>iliac artery</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>18</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>FemoralArtery</defName>
+		<label>femoral artery</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>9</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>AxillaryArtery</defName>
+		<label>axillary artery</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>7</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>BrachialArtery</defName>
+		<label>brachial artery</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>3.5</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+  
+   <Operation Class="PatchOperationAdd">
+	<xpath>/Defs</xpath>
+	<value>
+	   <BodyPartDef>
+		<defName>CarotidArtery</defName>
+		<label>carotid artery</label>
+		<hitPoints>25</hitPoints>
+		<bleedRate>8</bleedRate>
+		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<canScarify>true</canScarify>
+	  </BodyPartDef>
+	</value>
+  </Operation>
+	
+</Patch>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JDS] EFT Apparel</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>1</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>2.3</Mass>
+              <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+              <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+              <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+              <EquipDelay>2.5</EquipDelay>
+              <Bulk>6</Bulk>
+              <WornBulk>2</WornBulk>
+              <ArmorRating_Sharp>6</ArmorRating_Sharp>
+              <ArmorRating_Blunt>24</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <Suppressability>-0.1</Suppressability>
+              <AimingDelayFactor>0.15</AimingDelayFactor>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_Headgear_Ops-Core_Fast_Full_MT"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>UpperHead</li>
+              <li>Ears</li>
+              <li>Mouth</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

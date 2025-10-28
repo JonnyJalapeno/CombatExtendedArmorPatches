@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>14</Mass>
+              <Bulk>42</Bulk>
+              <WornBulk>14</WornBulk>
+              <ArmorRating_Sharp>18</ArmorRating_Sharp>
+              <ArmorRating_Blunt>80</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.27</ArmorRating_Heat>
+              <Insulation_Cold>1</Insulation_Cold>
+              <EquipDelay>4.5</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats>
+                <li>
+                  <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+                  <parts>
+                    <li>Neck</li>
+                    <li>Shoulder</li>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Arm</li>
+                    <li>Humerus</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                  </parts>
+                </li>
+                <li>
+                  <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+                  <parts>
+                    <li>Neck</li>
+                    <li>Shoulder</li>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Arm</li>
+                    <li>Humerus</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                  </parts>
+                </li>
+              </stats>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets />
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Neck</li>
+              <li>Shoulders</li>
+              <li>Waist</li>
+              <li>UpperChest</li>
+              <li>UpperArms</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

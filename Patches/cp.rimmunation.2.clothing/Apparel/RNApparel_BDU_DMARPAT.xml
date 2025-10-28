@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>135</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>2500</WorkToMake>
+              <Mass>1</Mass>
+              <StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+              <Bulk>1</Bulk>
+              <StuffEffectMultiplierInsulation_Cold>0.28</StuffEffectMultiplierInsulation_Cold>
+              <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+              <EquipDelay>2</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>UpperChest</li>
+              <li>Neck</li>
+              <li>Shoulders</li>
+              <li>Arms</li>
+              <li>Waist</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\combatextendedarmorpatches\\source\\hediff_carotiddamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|solutionrelative:source\\hediff_carotiddamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\combatextendedarmorpatches\\source\\addhediffoninjury.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|solutionrelative:source\\addhediffoninjury.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\combatextendedarmorpatches\\source\\carotidutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|solutionrelative:source\\carotidutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\combatextendedarmorpatches\\source\\combatextendedarmorpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E277E84F-4004-3A84-B9CB-02B36392A56C}|Source\\CombatExtendedArmorPatches.csproj|solutionrelative:source\\combatextendedarmorpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hediff_CarotidDamage.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\Hediff_CarotidDamage.cs",
+              "RelativeDocumentMoniker": "Source\\Hediff_CarotidDamage.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\Hediff_CarotidDamage.cs",
+              "RelativeToolTip": "Source\\Hediff_CarotidDamage.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:21:16.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddHediffOnInjury.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\AddHediffOnInjury.cs",
+              "RelativeDocumentMoniker": "Source\\AddHediffOnInjury.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\AddHediffOnInjury.cs",
+              "RelativeToolTip": "Source\\AddHediffOnInjury.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:15:42.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarotidUtils.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\CarotidUtils.cs",
+              "RelativeDocumentMoniker": "Source\\CarotidUtils.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\CarotidUtils.cs",
+              "RelativeToolTip": "Source\\CarotidUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:12:14.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CombatExtendedArmorPatches.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\CombatExtendedArmorPatches.cs",
+              "RelativeDocumentMoniker": "Source\\CombatExtendedArmorPatches.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatExtendedArmorPatches\\Source\\CombatExtendedArmorPatches.cs",
+              "RelativeToolTip": "Source\\CombatExtendedArmorPatches.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAowGcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T20:13:47.288Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

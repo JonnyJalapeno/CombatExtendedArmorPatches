@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Original CE Override -->
+<!-- Missing body part -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="MissingBodyPart"]/injuryProps/bleedRate</xpath>
+		<value>
+			<bleedRate>0.08</bleedRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="MissingBodyPart"]/injuryProps/painPerSeverity</xpath>
+		<value>
+			<painPerSeverity>0.025</painPerSeverity>
+		</value>
+	</Operation>
+
+</Patch>

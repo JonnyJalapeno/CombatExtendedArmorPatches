@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JDS] EFT Apparel</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>75</MaxHitPoints>
+              <Flammability>0.6</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>10000</WorkToMake>
+              <Mass>12.5</Mass>
+              <Bulk>37.5</Bulk>
+              <WornBulk>12.5</WornBulk>
+              <ArmorRating_Sharp>16</ArmorRating_Sharp>
+              <ArmorRating_Blunt>80</ArmorRating_Blunt>
+              <ArmorRating_Heat>0.27</ArmorRating_Heat>
+              <Insulation_Cold>1</Insulation_Cold>
+              <EquipDelay>4.5</EquipDelay>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats>
+                <li>
+                  <ArmorRating_Sharp>0.375</ArmorRating_Sharp>
+                  <parts>
+                    <li>Neck</li>
+                    <li>Shoulder</li>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Arm</li>
+                    <li>Humerus</li>
+                    <li>Leg</li>
+                    <li>Femur</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                  </parts>
+                </li>
+                <li>
+                  <ArmorRating_Blunt>0.375</ArmorRating_Blunt>
+                  <parts>
+                    <li>Neck</li>
+                    <li>Shoulder</li>
+                    <li>Pelvis</li>
+                    <li>Clavicle</li>
+                    <li>Arm</li>
+                    <li>Humerus</li>
+                    <li>Leg</li>
+                    <li>Femur</li>
+                    <li>Waist</li>
+                    <li>Intestines</li>
+                  </parts>
+                </li>
+              </stats>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets />
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="JDSTarkov_FORT_Redut-T5_Body_Armor"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Waist</li>
+              <li>Shoulders</li>
+              <li>Neck</li>
+              <li>UpperChest</li>
+              <li>UpperArms</li>
+              <li>UpperLegs</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

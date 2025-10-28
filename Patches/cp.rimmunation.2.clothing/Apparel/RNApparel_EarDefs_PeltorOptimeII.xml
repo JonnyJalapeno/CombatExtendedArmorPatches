@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[RH2] Rimmu-Nation² - Clothing</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/statBases</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]</xpath>
+            <value>
+              <statBases />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/statBases</xpath>
+          <value>
+            <statBases>
+              <MaxHitPoints>110</MaxHitPoints>
+              <Flammability>1</Flammability>
+              <DeteriorationRate>2</DeteriorationRate>
+              <Beauty>-3</Beauty>
+              <WorkToMake>4000</WorkToMake>
+              <Mass>0.05</Mass>
+              <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+              <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+              <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+              <EquipDelay>1.2</EquipDelay>
+              <Bulk>3</Bulk>
+              <WornBulk>0.1</WornBulk>
+              <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+              <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            </statBases>
+          </value>
+        </li>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]</xpath>
+          <value>
+            <li Class="CombatExtended.PartialArmorExt">
+              <stats />
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/equippedStatOffsets</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]</xpath>
+            <value>
+              <equippedStatOffsets />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/equippedStatOffsets</xpath>
+          <value>
+            <equippedStatOffsets>
+              <PsychicSensitivity>-0.1</PsychicSensitivity>
+              <Suppressability>-0.1</Suppressability>
+            </equippedStatOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]</xpath>
+            <value>
+              <apparel />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel/bodyPartGroups</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel</xpath>
+            <value>
+              <bodyPartGroups />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel/bodyPartGroups</xpath>
+          <value>
+            <bodyPartGroups>
+              <li>Ears</li>
+            </bodyPartGroups>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel/layers</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel</xpath>
+            <value>
+              <layers />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]/apparel/layers</xpath>
+          <value>
+            <layers>
+              <li>StrappedHead</li>
+            </layers>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

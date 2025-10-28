@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <Patch>
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartGroupDef>
+          <defName>UpperChest</defName>
+          <label>chest</label>
+          <listOrder>125</listOrder>
+        </BodyPartGroupDef>
+        <BodyPartGroupDef>
+          <defName>Ears</defName>
+          <label>ears</label>
+          <listOrder>124</listOrder>
+        </BodyPartGroupDef>
+        <BodyPartGroupDef>
+          <defName>Visor</defName>
+          <label>visor</label>
+          <listOrder>123</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>UpperArms</defName>
+          <label>upper arms</label>
+          <listOrder>122</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>UpperLegs</defName>
+          <label>upper legs</label>
+          <listOrder>121</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>Groin</defName>
+          <label>groin</label>
+          <listOrder>120</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>LowerArms</defName>
+          <label>lower arms</label>
+          <listOrder>119</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>Hips</defName>
+          <label>hips</label>
+          <listOrder>118</listOrder>
+        </BodyPartGroupDef>
+		<BodyPartGroupDef>
+          <defName>LowerLegs</defName>
+          <label>lower legs</label>
+          <listOrder>117</listOrder>
+        </BodyPartGroupDef>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+	  <xpath>/Defs/BodyPartGroupDef[defName='Waist']/label</xpath>
+	  <value>
+		<label>waist</label>
+	  </value>
+	</Operation>
+	
+ </Patch>

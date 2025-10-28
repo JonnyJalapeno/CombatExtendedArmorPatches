@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Spleen</defName>
+        <label>spleen</label>
+        <description>A biological human spleen.</description>
+        <descriptionHyperlinks><RecipeDef>InstallNaturalSpleen</RecipeDef></descriptionHyperlinks>
+        <statBases>
+          <MarketValue>1000</MarketValue>
+          <Mass>1</Mass>
+        </statBases>
+      </ThingDef>
+
+      <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Pancreas</defName>
+        <label>pancreas</label>
+        <description>A biological human pancreas.</description>
+        <descriptionHyperlinks><RecipeDef>InstallNaturalPancreas</RecipeDef></descriptionHyperlinks>
+        <statBases>
+          <MarketValue>1000</MarketValue>
+          <Mass>1</Mass>
+        </statBases>
+      </ThingDef>
+
+      <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Gallbladder</defName>
+        <label>gallbladder</label>
+        <description>A biological human gallbladder.</description>
+        <descriptionHyperlinks><RecipeDef>InstallNaturalGallbladder</RecipeDef></descriptionHyperlinks>
+        <statBases>
+          <MarketValue>1000</MarketValue>
+          <Mass>1</Mass>
+        </statBases>
+      </ThingDef>
+	  
+	   <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Intestines</defName>
+        <label>intestines</label>
+        <description>A biological human intestines.</description>
+        <descriptionHyperlinks><RecipeDef>InstallNaturalIntestines</RecipeDef></descriptionHyperlinks>
+        <statBases>
+          <MarketValue>1000</MarketValue>
+          <Mass>1</Mass>
+        </statBases>
+      </ThingDef>
+	  
+</Defs>

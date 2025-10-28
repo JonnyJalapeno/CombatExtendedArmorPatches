@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\CombatExtendedArmorPatches.pdb

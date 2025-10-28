@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Add vital tag organ -->
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyPartTagDef>
+			<defName>WaistIsVital</defName>
+			<vital>true</vital>
+		</BodyPartTagDef>
+      </value>
+    </Operation>
+	
+</Patch>

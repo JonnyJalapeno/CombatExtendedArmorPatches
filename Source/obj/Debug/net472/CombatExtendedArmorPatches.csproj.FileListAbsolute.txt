@@ -1,0 +1,15 @@
+C:\Assemblies\net472\CombatExtendedArmorPatches.dll
+C:\Assemblies\net472\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\source\obj\Debug\net472\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\net472\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\net472\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\net472\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\net472\CombatExtendedArmorPatches.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\Debug\net472\CombatExtendedArmorPatches.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatExtendedArmorPatches\Assemblies\Debug\net472\CombatExtendedArmorPatches.pdb

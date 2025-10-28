@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>InstallNaturalSpleen</defName>
+        <label>install spleen</label>
+        <description>Install a biological spleen.</description>
+        <descriptionHyperlinks><ThingDef>Spleen</ThingDef></descriptionHyperlinks>
+        <jobString>Installing spleen.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Spleen</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Spleen</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+          <li>Spleen</li>
+        </appliedOnFixedBodyParts>
+      </RecipeDef>
+      
+      <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>InstallNaturalPancreas</defName>
+        <label>install pancreas</label>
+        <description>Install a biological pancreas.</description>
+        <descriptionHyperlinks><ThingDef>Pancreas</ThingDef></descriptionHyperlinks>
+        <jobString>Installing pancreas.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Pancreas</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Pancreas</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+          <li>Pancreas</li>
+        </appliedOnFixedBodyParts>
+      </RecipeDef>
+
+      <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>InstallNaturalGallbladder</defName>
+        <label>install gallbladder</label>
+        <description>Install a biological gallbladder.</description>
+        <descriptionHyperlinks><ThingDef>Gallbladder</ThingDef></descriptionHyperlinks>
+        <jobString>Installing gallbladder.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Gallbladder</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Gallbladder</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+          <li>Gallbladder</li>
+        </appliedOnFixedBodyParts>
+      </RecipeDef>
+	  
+	  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>InstallNaturalIntestines</defName>
+        <label>install intestines</label>
+        <description>Install biological intestines.</description>
+        <descriptionHyperlinks><ThingDef>Intestines</ThingDef></descriptionHyperlinks>
+        <jobString>Installing intestines.</jobString>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>Intestines</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>Intestines</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+          <li>Intestines</li>
+        </appliedOnFixedBodyParts>
+      </RecipeDef>
+	  
+</Defs>
