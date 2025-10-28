@@ -151,7 +151,7 @@
 			<li>
 			  <def>Waist</def>
 				<height>Middle</height>
-				<coverage>0.12</coverage>
+				<coverage>0.09</coverage>
 				<groups>
 			      <li>Torso</li>
 			      <li>Waist</li>	
@@ -624,283 +624,304 @@
 			  </parts>
 			</li>
 			
-			<!-- Left Leg -->
-			
+			<!-- Pelvis -->
 			<li>
-			  <def>Hip</def>
-			  <customLabel>left hip</customLabel>
-			  <coverage>0.15</coverage>
-			  <height>Bottom</height>
-			  <groups>
-				<li>Legs</li>
-				<li>Hips</li>
-			  </groups>
-			  <woundAnchorTag>LeftLeg</woundAnchorTag>
-			  <flipGraphic>true</flipGraphic>
-			  <parts>
-				<li>
-					<def>HipBone</def>
-					<customLabel>left hip bone</customLabel>
-					<coverage>0.13</coverage>
-					<depth>Inside</depth>
-					<groups>
-						<li>Legs</li>
-						<li>Hips</li>
-					</groups>
-				</li>
-				<li>
-					<def>IliacArtery</def>
-					<customLabel>left iliac artery</customLabel>
-					<coverage>0.01</coverage>
-					<depth>Inside</depth>
-					<groups>
-						<li>Legs</li>
-						<li>Hips</li>
-					</groups>
-				</li>
-				<li>
-				  <def>Thigh</def>
-				  <customLabel>left thigh</customLabel>
-				  <coverage>0.35</coverage>
-				  <groups>
-					<li>Legs</li>
-					<li>UpperLegs</li>
-				  </groups>
-				  <parts>
+				<def>Pelvis</def>
+				<height>Bottom</height>
+				<coverage>0.3</coverage>
+				<groups>
+					<li>Torso</li>
+				</groups>
+				<parts>
+					<!-- Left Hip -->
 					<li>
-					  <def>Femur</def>
-					  <customLabel>left femur</customLabel>
-					  <coverage>0.15</coverage>
-					  <depth>Inside</depth>
-					  <groups>
-						<li>Legs</li>
-						<li>UpperLegs</li>
-					  </groups>
-					</li>
-					<li>
-					  <def>FemoralArtery</def>
-					  <customLabel>left femoral artery</customLabel>
-					  <coverage>0.02</coverage>
-					  <depth>Inside</depth>
-					  <groups>
-						<li>Legs</li>
-						<li>UpperLegs</li>
-					  </groups>
-					</li>
-					<li>
-					  <def>Calf</def>
-					  <customLabel>left calf</customLabel>
-					  <coverage>0.2</coverage>
-					  <groups>
-						<li>Legs</li>
-						<li>LowerLegs</li>
-					  </groups>
-					  <parts>
-						<li>
-						  <def>Tibia</def>
-						  <customLabel>left tibia</customLabel>
-						  <coverage>0.15</coverage>
-						  <depth>Inside</depth>
-						  <groups>
+						<def>Hip</def>
+						<customLabel>left hip</customLabel>
+						<coverage>0.4</coverage>
+						<height>Bottom</height>
+						<groups>
 							<li>Legs</li>
-							<li>LowerLegs</li>
-						  </groups>
-						</li>
-						<li>
-						  <def>Foot</def>
-						  <customLabel>left foot</customLabel>
-						  <coverage>0.12</coverage>
-						  <flipGraphic>true</flipGraphic>
-						  <groups>
-							<li>Feet</li>
-						  </groups>
-						  <parts>
+							<li>Hips</li>
+						</groups>
+						<woundAnchorTag>LeftLeg</woundAnchorTag>
+						<flipGraphic>true</flipGraphic>
+						<parts>
 							<li>
-							  <def>Toe</def>
-							  <customLabel>left little toe</customLabel>
-							  <coverage>0.06</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>HipBone</def>
+								<customLabel>left hip bone</customLabel>
+								<coverage>0.15</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Legs</li>
+									<li>Hips</li>
+								</groups>
 							</li>
 							<li>
-							  <def>Toe</def>
-							  <customLabel>left fourth toe</customLabel>
-							  <coverage>0.07</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>IliacArtery</def>
+								<customLabel>left iliac artery</customLabel>
+								<coverage>0.01</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Legs</li>
+									<li>Hips</li>
+								</groups>
 							</li>
+							<!-- Thigh -->
 							<li>
-							  <def>Toe</def>
-							  <customLabel>left middle toe</customLabel>
-							  <coverage>0.08</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>Thigh</def>
+								<customLabel>left thigh</customLabel>
+								<coverage>0.65</coverage>
+								<height>Bottom</height>
+								<groups>
+									<li>Legs</li>
+									<li>UpperLegs</li>
+								</groups>
+								<parts>
+									<li>
+										<def>Femur</def>
+										<customLabel>left femur</customLabel>
+										<coverage>0.15</coverage>
+										<depth>Inside</depth>
+										<groups>
+											<li>Legs</li>
+											<li>UpperLegs</li>
+										</groups>
+									</li>
+									<li>
+										<def>FemoralArtery</def>
+										<customLabel>left femoral artery</customLabel>
+										<coverage>0.02</coverage>
+										<depth>Inside</depth>
+										<groups>
+											<li>Legs</li>
+											<li>UpperLegs</li>
+										</groups>
+									</li>
+									<!-- Calf -->
+									<li>
+										<def>Calf</def>
+										<customLabel>left calf</customLabel>
+										<coverage>0.65</coverage>
+										<height>Bottom</height>
+										<groups>
+											<li>Legs</li>
+											<li>LowerLegs</li>
+										</groups>
+										<parts>
+											<li>
+												<def>Tibia</def>
+												<customLabel>left tibia</customLabel>
+												<coverage>0.15</coverage>
+												<depth>Inside</depth>
+												<groups>
+													<li>Legs</li>
+													<li>LowerLegs</li>
+												</groups>
+											</li>
+											<!-- Foot -->
+											<li>
+												<def>Foot</def>
+												<customLabel>left foot</customLabel>
+												<coverage>0.65</coverage>
+												<height>Bottom</height>
+												<flipGraphic>true</flipGraphic>
+												<groups>
+													<li>Feet</li>
+												</groups>
+												<parts>
+													<li>
+														<def>Toe</def>
+														<customLabel>left little toe</customLabel>
+														<coverage>0.06</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>left fourth toe</customLabel>
+														<coverage>0.07</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>left middle toe</customLabel>
+														<coverage>0.08</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>left second toe</customLabel>
+														<coverage>0.09</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>left big toe</customLabel>
+														<coverage>0.09</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+												</parts>
+											</li>
+										</parts>
+									</li>
+								</parts>
 							</li>
-							<li>
-							  <def>Toe</def>
-							  <customLabel>left second toe</customLabel>
-							  <coverage>0.09</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
-							</li>
-							<li>
-							  <def>Toe</def>
-							  <customLabel>left big toe</customLabel>
-							  <coverage>0.09</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
-							</li>
-						  </parts>
-						</li>
-					  </parts>
+						</parts>
 					</li>
-				  </parts>
-				</li>
-			  </parts>
-			</li>
 
-			<!-- Right Leg -->
-
-			<li>
-			  <def>Hip</def>
-			  <customLabel>right hip</customLabel>
-			  <coverage>0.15</coverage>
-			  <height>Bottom</height>
-			  <groups>
-				<li>Legs</li>
-				<li>Hips</li>
-			  </groups>
-			  <woundAnchorTag>RightLeg</woundAnchorTag>
-			  <parts>
-				<li>
-					<def>HipBone</def>
-					<customLabel>right hip bone</customLabel>
-					<coverage>0.13</coverage>
-					<depth>Inside</depth>
-					<groups>
-						<li>Legs</li>
-						<li>Hips</li>
-					</groups>
-				</li>
-				<li>
-					<def>IliacArtery</def>
-					<customLabel>right iliac artery</customLabel>
-					<coverage>0.01</coverage>
-					<depth>Inside</depth>
-					<groups>
-						<li>Legs</li>
-						<li>Hips</li>
-					</groups>
-				</li>
-				<li>
-				  <def>Thigh</def>
-				  <customLabel>right thigh</customLabel>
-				  <coverage>0.35</coverage>
-				  <groups>
-					<li>Legs</li>
-					<li>UpperLegs</li>
-				  </groups>
-				  <parts>
+					<!-- Right Hip -->
 					<li>
-					  <def>Femur</def>
-					  <customLabel>right femur</customLabel>
-					  <coverage>0.15</coverage>
-					  <depth>Inside</depth>
-					  <groups>
-						<li>Legs</li>
-						<li>UpperLegs</li>
-					  </groups>
-					</li>
-					<li>
-					<def>FemoralArtery</def>
-					<customLabel>right femoral artery</customLabel>
-					<coverage>0.02</coverage>
-					<depth>Inside</depth>
-					<groups>
-						<li>Legs</li>
-						<li>UpperLegs</li>
-					</groups>
-					</li>
-					<li>
-					  <def>Calf</def>
-					  <customLabel>right calf</customLabel>
-					  <coverage>0.2</coverage>
-					  <groups>
-						<li>Legs</li>
-						<li>LowerLegs</li>
-					  </groups>
-					  <parts>
-						<li>
-						  <def>Tibia</def>
-						  <customLabel>right tibia</customLabel>
-						  <coverage>0.15</coverage>
-						  <depth>Inside</depth>
-						  <groups>
+						<def>Hip</def>
+						<customLabel>right hip</customLabel>
+						<coverage>0.4</coverage>
+						<height>Bottom</height>
+						<groups>
 							<li>Legs</li>
-							<li>LowerLegs</li>
-						  </groups>
-						</li>
-						<li>
-						  <def>Foot</def>
-						  <customLabel>right foot</customLabel>
-						  <coverage>0.12</coverage>
-						  <flipGraphic>true</flipGraphic>
-						  <groups>
-							<li>Feet</li>
-						  </groups>
-						  <parts>
+							<li>Hips</li>
+						</groups>
+						<woundAnchorTag>RightLeg</woundAnchorTag>
+						<parts>
 							<li>
-							  <def>Toe</def>
-							  <customLabel>right little toe</customLabel>
-							  <coverage>0.06</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>HipBone</def>
+								<customLabel>right hip bone</customLabel>
+								<coverage>0.15</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Legs</li>
+									<li>Hips</li>
+								</groups>
 							</li>
 							<li>
-							  <def>Toe</def>
-							  <customLabel>right fourth toe</customLabel>
-							  <coverage>0.07</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>IliacArtery</def>
+								<customLabel>right iliac artery</customLabel>
+								<coverage>0.01</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Legs</li>
+									<li>Hips</li>
+								</groups>
 							</li>
+							<!-- Thigh -->
 							<li>
-							  <def>Toe</def>
-							  <customLabel>right middle toe</customLabel>
-							  <coverage>0.08</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
+								<def>Thigh</def>
+								<customLabel>right thigh</customLabel>
+								<coverage>0.65</coverage>
+								<height>Bottom</height>
+								<groups>
+									<li>Legs</li>
+									<li>UpperLegs</li>
+								</groups>
+								<parts>
+									<li>
+										<def>Femur</def>
+										<customLabel>right femur</customLabel>
+										<coverage>0.15</coverage>
+										<depth>Inside</depth>
+										<groups>
+											<li>Legs</li>
+											<li>UpperLegs</li>
+										</groups>
+									</li>
+									<li>
+										<def>FemoralArtery</def>
+										<customLabel>right femoral artery</customLabel>
+										<coverage>0.02</coverage>
+										<depth>Inside</depth>
+										<groups>
+											<li>Legs</li>
+											<li>UpperLegs</li>
+										</groups>
+									</li>
+									<!-- Calf -->
+									<li>
+										<def>Calf</def>
+										<customLabel>right calf</customLabel>
+										<coverage>0.65</coverage>
+										<height>Bottom</height>
+										<groups>
+											<li>Legs</li>
+											<li>LowerLegs</li>
+										</groups>
+										<parts>
+											<li>
+												<def>Tibia</def>
+												<customLabel>right tibia</customLabel>
+												<coverage>0.15</coverage>
+												<depth>Inside</depth>
+												<groups>
+													<li>Legs</li>
+													<li>LowerLegs</li>
+												</groups>
+											</li>
+											<!-- Foot -->
+											<li>
+												<def>Foot</def>
+												<customLabel>right foot</customLabel>
+												<coverage>0.65</coverage>
+												<height>Bottom</height>
+												<flipGraphic>true</flipGraphic>
+												<groups>
+													<li>Feet</li>
+												</groups>
+												<parts>
+													<li>
+														<def>Toe</def>
+														<customLabel>right little toe</customLabel>
+														<coverage>0.06</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>right fourth toe</customLabel>
+														<coverage>0.07</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>right middle toe</customLabel>
+														<coverage>0.08</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>right second toe</customLabel>
+														<coverage>0.09</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+													<li>
+														<def>Toe</def>
+														<customLabel>right big toe</customLabel>
+														<coverage>0.09</coverage>
+														<groups>
+															<li>Feet</li>
+														</groups>
+													</li>
+												</parts>
+											</li>
+										</parts>
+									</li>
+								</parts>
 							</li>
-							<li>
-							  <def>Toe</def>
-							  <customLabel>right second toe</customLabel>
-							  <coverage>0.09</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
-							</li>
-							<li>
-							  <def>Toe</def>
-							  <customLabel>right big toe</customLabel>
-							  <coverage>0.09</coverage>
-							  <groups>
-								<li>Feet</li>
-							  </groups>
-							</li>
-						  </parts>
-						</li>
-					  </parts>
+						</parts>
 					</li>
-				  </parts>
-				</li>
-			  </parts>
+				</parts>
 			</li>
 		</parts>
     </corePart>

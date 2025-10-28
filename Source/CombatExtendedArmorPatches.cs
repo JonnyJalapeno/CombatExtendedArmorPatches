@@ -81,7 +81,7 @@ namespace CombatExtendedArmorPatches
     {
         static void Postfix(Hediff_MissingPart __instance)
         {
-            if ((__instance.Part.def.defName == "Waist") && !__instance.pawn.Dead)
+            if (__instance.Part.def.tags.Any(tag => tag.defName == "isVital") && !__instance.pawn.Dead)
             {
                 __instance.pawn.Kill(null);
             }

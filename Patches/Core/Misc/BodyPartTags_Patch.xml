@@ -5,10 +5,10 @@
       <xpath>/Defs</xpath>
       <value>
         <BodyPartTagDef>
-			<defName>WaistIsVital</defName>
-			<vital>true</vital>
-		</BodyPartTagDef>
+          <defName>isVital</defName>
+          <vital>true</vital>
+        </BodyPartTagDef>
       </value>
     </Operation>
-	
+    
 </Patch>

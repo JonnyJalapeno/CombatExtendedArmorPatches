@@ -30,7 +30,7 @@
 			<canScarify>true</canScarify>
 			<bleedRate>1.5</bleedRate>
 			<tags>
-				<li>WaistIsVital</li>
+				<li>isVital</li>
 			</tags>
 		  </BodyPartDef>
 		</value>
@@ -154,6 +154,23 @@
 	  </BodyPartDef>
 	</value>
   </Operation>
+
+   <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/BodyPartDef[defName='Pelvis']</xpath>
+	<value>
+	  <BodyPartDef>
+		<defName>Pelvis</defName>
+		<label>Hips</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>1.5</bleedRate>
+		<tags>
+			<li>isVital</li>
+		</tags>
+	</BodyPartDef>
+	</value>
+  </Operation>
   
   
   
@@ -170,12 +187,5 @@
 	  <label>lower arm</label>
 	</value>
   </Operation>
-
-    <Operation Class="PatchOperationReplace">
-      <xpath>/Defs/BodyPartDef[defName='Pelvis']/label</xpath>
-      <value>
-        <label>hip bone</label>
-      </value>
-    </Operation>
 	
 </Patch>
