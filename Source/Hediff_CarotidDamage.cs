@@ -8,10 +8,8 @@ namespace CombatExtendedArmorPatches
     {
         private int ticksUntilNextUpdate;
         private const int updateInterval = 10; // every 10 ticks
-
-        // Stores the flat severity reduction applied by tending
-        private float tendingReduction = 0f;
-        private bool tendedApplied = false;
+        private bool tendingApplied = false;
+        private float tendingReduction = 0f; // proportional reduction once applied
 
         public override void PostMake()
         {
@@ -34,22 +32,25 @@ namespace CombatExtendedArmorPatches
                 return;
             }
 
-            // Check if there is a tended injury on the carotid part
-            var injury = pawn.health.hediffSet.hediffs
-                .OfType<Hediff_Injury>()
-                .FirstOrDefault(h => h.Part == part && h.IsTended());
-
-            // Apply flat reduction **once** if not yet applied
-            if (!tendedApplied && injury != null)
+            // Check for tended injury and apply proportional reduction once
+            if (!tendingApplied)
             {
-                tendingReduction = 0.3f; // flat reduction
-                tendedApplied = true;
+                var injury = pawn.health.hediffSet.hediffs
+                    .OfType<Hediff_Injury>()
+                    .FirstOrDefault(h => h.Part == part && h.IsTended());
+
+                if (injury != null)
+                {
+                    // Proportional reduction, e.g., 30% of current severity
+                    tendingReduction = 0.5f * CarotidUtils.CalculateSeverityForPart(part, pawn);
+                    tendingApplied = true;
+                }
             }
 
-            // Calculate base severity
+            // Calculate current severity from part health
             float baseSeverity = CarotidUtils.CalculateSeverityForPart(part, pawn);
 
-            // Apply reduction and clamp to >= 0
+            // Apply tending reduction, clamp at zero
             Severity = baseSeverity - tendingReduction;
             if (Severity <= 0f)
             {
