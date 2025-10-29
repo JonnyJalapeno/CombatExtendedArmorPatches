@@ -5,7 +5,7 @@
 		<xpath>Defs/RecipeDef[defName="InstallBionicLeg"]/appliedOnFixedBodyParts</xpath>
 		<value>
 			<appliedOnFixedBodyParts>
-				<li>Hip</li>
+				<li>HipBone</li>
 			</appliedOnFixedBodyParts>
 		</value>
 	</Operation>

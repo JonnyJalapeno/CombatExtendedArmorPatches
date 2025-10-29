@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="MakeableDrugPillBase">
+  <defName>Antibiotics</defName>
+  <label>antibiotics</label>
+  <description>A broad-spectrum antibiotic. Slows bacterial infection progression for a limited time.</description>
+  <graphicData>
+    <texPath>Things/Item/Drug/Antibiotics</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <statBases>
+    <WorkToMake>600</WorkToMake>
+    <MarketValue>15</MarketValue>
+    <Mass>0.005</Mass>
+    <Flammability>0.7</Flammability>
+  </statBases>
+  <techLevel>Industrial</techLevel>
+  <ingestible>
+    <drugCategory>Medical</drugCategory>
+    <outcomeDoers>
+      <li Class="IngestionOutcomeDoer_GiveHediff">
+        <hediffDef>Antibiotics</hediffDef>
+        <severity>1.0</severity>
+      </li>
+    </outcomeDoers>
+  </ingestible>
+  <recipeMaker>
+    <researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <displayPriority>2100</displayPriority>
+  </recipeMaker>
+  <costList>
+    <Neutroamine>2</Neutroamine>
+  </costList>
+  <comps>
+    <li Class="CompProperties_Drug">
+      <listOrder>1000</listOrder>
+      <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+    </li>
+  </comps>
+</ThingDef>
+
+<HediffDef>
+  <defName>Antibiotics</defName>
+  <hediffClass>Verse.HediffWithComps</hediffClass>
+  <label>antibiotics</label>
+  <description>Active antibiotics in the bloodstream. Slows infection progression while active.</description>
+  <defaultLabelColor>(0.5,1,0.5)</defaultLabelColor>
+  <scenarioCanAdd>true</scenarioCanAdd>
+  <maxSeverity>1.0</maxSeverity>
+  <isBad>false</isBad>
+  <comps>
+    <li Class="CombatExtendedArmorPatches.HediffCompProperties_Antibiotic">
+      <infectionSlowdownFactor>0.01</infectionSlowdownFactor>
+    </li>
+    <li Class="HediffCompProperties_Disappears">
+      <disappearsAfterTicks>120000</disappearsAfterTicks>
+      <showRemainingTime>true</showRemainingTime>
+    </li>
+  </comps>
+</HediffDef>
+
+
+</Defs>

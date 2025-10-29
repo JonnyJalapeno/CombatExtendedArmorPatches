@@ -13,7 +13,7 @@ namespace CombatExtendedArmorPatches
     {
         static LoadoutFilterPatches()
         {
-            var harmony = new Harmony("com.yourname.CombatExtendedArmorPatches");
+            var harmony = new Harmony("com.Vril.CombatExtendedArmorPatches");
             harmony.PatchAll();
             Log.Message("[CombatExtendedArmorPatches] patch applied");
         }
