@@ -42,13 +42,13 @@ namespace CombatExtendedArmorPatches
                 if (injury != null)
                 {
                     // Proportional reduction, e.g., 30% of current severity
-                    tendingReduction = 0.5f * CarotidUtils.CalculateSeverityForPart(part, pawn);
+                    tendingReduction = 0.5f * Utils.CalculateSeverityForPart(part, pawn);
                     tendingApplied = true;
                 }
             }
 
             // Calculate current severity from part health
-            float baseSeverity = CarotidUtils.CalculateSeverityForPart(part, pawn);
+            float baseSeverity = Utils.CalculateSeverityForPart(part, pawn);
 
             // Apply tending reduction, clamp at zero
             Severity = baseSeverity - tendingReduction;

@@ -39,7 +39,7 @@
           <listOrder>119</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
-          <defName>Hips</defName>
+          <defName>Pelvis</defName>
           <label>hips</label>
           <listOrder>118</listOrder>
         </BodyPartGroupDef>

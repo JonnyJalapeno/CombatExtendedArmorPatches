@@ -20,7 +20,7 @@
     <drugCategory>Medical</drugCategory>
     <outcomeDoers>
       <li Class="IngestionOutcomeDoer_GiveHediff">
-        <hediffDef>Antibiotics</hediffDef>
+        <hediffDef>AntibioticsHediff</hediffDef>
         <severity>1.0</severity>
       </li>
     </outcomeDoers>
@@ -38,13 +38,13 @@
   <comps>
     <li Class="CompProperties_Drug">
       <listOrder>1000</listOrder>
-      <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      <overdoseSeverityOffset>0.1</overdoseSeverityOffset>
     </li>
   </comps>
 </ThingDef>
 
 <HediffDef>
-  <defName>Antibiotics</defName>
+  <defName>AntibioticsHediff</defName>
   <hediffClass>Verse.HediffWithComps</hediffClass>
   <label>antibiotics</label>
   <description>Active antibiotics in the bloodstream. Slows infection progression while active.</description>
@@ -54,7 +54,7 @@
   <isBad>false</isBad>
   <comps>
     <li Class="CombatExtendedArmorPatches.HediffCompProperties_Antibiotic">
-      <infectionSlowdownFactor>0.01</infectionSlowdownFactor>
+      <infectionSlowdownFactor>0.5</infectionSlowdownFactor>
     </li>
     <li Class="HediffCompProperties_Disappears">
       <disappearsAfterTicks>120000</disappearsAfterTicks>

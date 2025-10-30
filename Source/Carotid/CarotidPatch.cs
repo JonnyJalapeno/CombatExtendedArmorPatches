@@ -24,7 +24,7 @@ namespace CombatExtendedArmorPatches
                 var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(carotidHediffDef, false)
                              ?? pawn.health.AddHediff(carotidHediffDef, part);
 
-                hediff.Severity = CarotidUtils.CalculateSeverityForPart(part, pawn);
+                hediff.Severity = Utils.CalculateSeverityForPart(part, pawn);
             }
         }
     }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>IntestineSpill</defName>
+    <label>intestine spill</label>
+    <description>Damage to the intestines that increases the risk of infection as severity rises.</description>
+    <hediffClass>CombatExtendedArmorPatches.Hediff_IntestineSpill</hediffClass>
+    <isBad>true</isBad>
+
+    <comps>
+      <!-- Base infection chance -->
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.1</infectionChance>
+      </li>
+
+      <!-- Severity-based infection boost -->
+      <li Class="CombatExtendedArmorPatches.HediffCompProperties_SeverityInfectionBoost">
+        <baseMultiplier>0.25</baseMultiplier>
+        <maxMultiplier>1.0</maxMultiplier>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

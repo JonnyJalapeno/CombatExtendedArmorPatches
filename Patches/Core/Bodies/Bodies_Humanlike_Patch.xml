@@ -477,7 +477,6 @@
 				  <coverage>0.075</coverage>
 				  <height>Top</height>
 				  <depth>Inside</depth>
-				  
 				  <groups>
 					<li>Torso</li>
 					<li>Shoulders</li>
@@ -613,7 +612,7 @@
 				<height>Bottom</height>
 				<coverage>0.3</coverage>
 				<groups>
-					<li>Torso</li>
+					<li>Pelvis</li>
 				</groups>
 				<parts>
 					<!-- Iliac Arteries directly under Pelvis -->
@@ -624,7 +623,7 @@
 						<depth>Inside</depth>
 						<groups>
 							<li>Legs</li>
-							<li>Hips</li>
+							<li>Pelvis</li>
 						</groups>
 					</li>
 					<li>
@@ -634,7 +633,7 @@
 						<depth>Inside</depth>
 						<groups>
 							<li>Legs</li>
-							<li>Hips</li>
+							<li>Pelvis</li>
 						</groups>
 					</li>
 
@@ -664,7 +663,7 @@
 						<depth>Inside</depth>
 						<groups>
 							<li>Legs</li>
-							<li>Hips</li>
+							<li>Pelvis</li>
 						</groups>
 						<parts>
 							<li>
@@ -785,7 +784,7 @@
 						<depth>Inside</depth>
 						<groups>
 							<li>Legs</li>
-							<li>Hips</li>
+							<li>Pelvis</li>
 						</groups>
 						<parts>
 							<li>
