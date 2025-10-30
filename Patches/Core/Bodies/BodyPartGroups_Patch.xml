@@ -15,17 +15,17 @@
         </BodyPartGroupDef>
         <BodyPartGroupDef>
           <defName>Visor</defName>
-          <label>visor</label>
+          <label>face</label>
           <listOrder>123</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
           <defName>UpperArms</defName>
-          <label>upper arms</label>
+          <label>arms</label>
           <listOrder>122</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
           <defName>UpperLegs</defName>
-          <label>upper legs</label>
+          <label>thighs</label>
           <listOrder>121</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
@@ -35,7 +35,7 @@
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
           <defName>LowerArms</defName>
-          <label>lower arms</label>
+          <label>forearms</label>
           <listOrder>119</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
@@ -45,7 +45,7 @@
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
           <defName>LowerLegs</defName>
-          <label>lower legs</label>
+          <label>calves</label>
           <listOrder>117</listOrder>
         </BodyPartGroupDef>
       </value>

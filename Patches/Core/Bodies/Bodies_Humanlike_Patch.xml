@@ -189,7 +189,7 @@
 			  <parts>
 				<li>
 					<def>CarotidArtery</def>
-					<coverage>0.025</coverage>
+					<coverage>0.03</coverage>
 					<depth>Inside</depth>
 					<groups>
 					  <li>Neck</li>
@@ -197,7 +197,7 @@
 				</li>
 				<li>
 				  <def>Head</def>
-				  <coverage>0.7</coverage>
+				  <coverage>0.65</coverage>
 				  <groups>
 					<li>UpperHead</li>
 					<li>FullHead</li>
@@ -206,7 +206,7 @@
 				  <parts>
 					<li>
 					  <def>Skull</def>
-					  <coverage>0.21</coverage>
+					  <coverage>0.3</coverage>
 					  <depth>Inside</depth>
 					  <groups>
 						<li>UpperHead</li>
@@ -216,7 +216,7 @@
 						<li>
 						  <def>Brain</def>
 
-						  <coverage>0.7</coverage>
+						  <coverage>0.75</coverage>
 						  <groups>
 							<li>UpperHead</li>
 							<li>FullHead</li>
@@ -258,7 +258,7 @@
 					<li>
 					  <def>Ear</def>
 					  <customLabel>left ear</customLabel>
-					  <coverage>0.07</coverage>
+					  <coverage>0.05</coverage>
 					  <flipGraphic>true</flipGraphic>
 					  <groups>
 						<li>Ears</li>
@@ -268,7 +268,7 @@
 					<li>
 					  <def>Ear</def>
 					  <customLabel>right ear</customLabel>
-					  <coverage>0.07</coverage>
+					  <coverage>0.05</coverage>
 					  <groups>
 						<li>Ears</li>
 						<li>FullHead</li>
@@ -276,7 +276,7 @@
 					</li>
 					<li>
 					  <def>Nose</def>
-					  <coverage>0.07</coverage>
+					  <coverage>0.05</coverage>
 					  <groups>
 						<li>Visor</li>
 						<li>FullHead</li>
@@ -294,7 +294,7 @@
 					  <parts>
 						<li>
 						  <def>Tongue</def>
-						  <coverage>0.5</coverage>
+						  <coverage>0.25</coverage>
 						  <depth>Inside</depth>
 						  <groups>
 							<li>Mouth</li>
@@ -379,7 +379,7 @@
 					<li>
 					  <def>Arm</def>
 					  <customLabel>left lower arm</customLabel>
-					  <coverage>0.3</coverage>
+					  <coverage>0.45</coverage>
 					  <groups>
 						<li>Arms</li>
 						<li>LowerArms</li>
@@ -398,7 +398,7 @@
 						<li>
 						  <def>Hand</def>
 						  <customLabel>left hand</customLabel>
-						  <coverage>0.125</coverage>
+						  <coverage>0.25</coverage>
 						  <height>Bottom</height>
 						  <flipGraphic>true</flipGraphic>						 
 						  <groups>
@@ -497,7 +497,7 @@
 				<li>
 				  <def>UpperArm</def>
 				  <customLabel>right arm</customLabel>
-				  <coverage>0.3</coverage>
+				  <coverage>0.4</coverage>
 				  <groups>
 					<li>Arms</li>
 					<li>UpperArms</li>
@@ -506,7 +506,7 @@
 					<li>
 					  <def>Humerus</def>
 					  <customLabel>right humerus</customLabel>
-					  <coverage>0.15</coverage>
+					  <coverage>0.1</coverage>
 					  <depth>Inside</depth>
 					  <groups>
 						<li>Arms</li>
@@ -526,7 +526,7 @@
 					<li>
 					  <def>Arm</def>
 					  <customLabel>lower right arm</customLabel>
-					  <coverage>0.3</coverage>
+					  <coverage>0.45</coverage>
 					  <groups>
 						<li>Arms</li>
 						<li>LowerArms</li>
@@ -545,7 +545,7 @@
 						<li>
 						 <def>Hand</def>
 						  <customLabel>right hand</customLabel>
-						  <coverage>0.125</coverage>
+						  <coverage>0.25</coverage>
 						  <height>Bottom</height>
 						  <groups>
 							<li>Hands</li>
@@ -610,7 +610,7 @@
 			<li>
 				<def>Pelvis</def>
 				<height>Bottom</height>
-				<coverage>0.3</coverage>
+				<coverage>0.35</coverage>
 				<groups>
 					<li>Pelvis</li>
 				</groups>
@@ -680,7 +680,7 @@
 									<li>
 										<def>Femur</def>
 										<customLabel>left femur</customLabel>
-										<coverage>0.15</coverage>
+										<coverage>0.1</coverage>
 										<depth>Inside</depth>
 										<groups>
 											<li>Legs</li>
@@ -700,7 +700,7 @@
 									<li>
 										<def>Calf</def>
 										<customLabel>left calf</customLabel>
-										<coverage>0.65</coverage>
+										<coverage>0.35</coverage>
 										<height>Bottom</height>
 										<groups>
 											<li>Legs</li>
@@ -710,7 +710,7 @@
 											<li>
 												<def>Tibia</def>
 												<customLabel>left tibia</customLabel>
-												<coverage>0.15</coverage>
+												<coverage>0.1</coverage>
 												<depth>Inside</depth>
 												<groups>
 													<li>Legs</li>
@@ -720,7 +720,7 @@
 											<li>
 												<def>Foot</def>
 												<customLabel>left foot</customLabel>
-												<coverage>0.65</coverage>
+												<coverage>0.35</coverage>
 												<height>Bottom</height>
 												<flipGraphic>true</flipGraphic>
 												<groups>
@@ -801,7 +801,7 @@
 									<li>
 										<def>Femur</def>
 										<customLabel>right femur</customLabel>
-										<coverage>0.15</coverage>
+										<coverage>0.1</coverage>
 										<depth>Inside</depth>
 										<groups>
 											<li>Legs</li>
@@ -821,7 +821,7 @@
 									<li>
 										<def>Calf</def>
 										<customLabel>right calf</customLabel>
-										<coverage>0.65</coverage>
+										<coverage>0.35</coverage>
 										<height>Bottom</height>
 										<groups>
 											<li>Legs</li>
@@ -831,7 +831,7 @@
 											<li>
 												<def>Tibia</def>
 												<customLabel>right tibia</customLabel>
-												<coverage>0.15</coverage>
+												<coverage>0.1</coverage>
 												<depth>Inside</depth>
 												<groups>
 													<li>Legs</li>
@@ -841,7 +841,7 @@
 											<li>
 												<def>Foot</def>
 												<customLabel>right foot</customLabel>
-												<coverage>0.65</coverage>
+												<coverage>0.35</coverage>
 												<height>Bottom</height>
 												<flipGraphic>true</flipGraphic>
 												<groups>

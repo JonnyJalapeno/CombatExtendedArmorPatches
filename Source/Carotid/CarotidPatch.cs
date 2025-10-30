@@ -4,6 +4,7 @@ using Verse;
 
 namespace CombatExtendedArmorPatches
 {
+    //Adds consciousness decreasing effect when the carotid artery is damaged
     [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
     internal static class Harmony_DamageWorker_AddInjury_ApplyDamageToPart
     {

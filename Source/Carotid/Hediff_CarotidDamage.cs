@@ -7,7 +7,7 @@ namespace CombatExtendedArmorPatches
     public class Hediff_CarotidDamage : Hediff
     {
         private int ticksUntilNextUpdate;
-        private const int updateInterval = 10; // every 10 ticks
+        private const int updateInterval = 60; // every 10 ticks
         private bool tendingApplied = false;
         private float tendingReduction = 0f; // proportional reduction once applied
 

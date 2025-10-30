@@ -6,6 +6,7 @@ using System.Reflection;
 
 namespace CombatExtendedArmorPatches
 {
+    // Adds increasing infection chance based on severity for intestine injuries
     // Patch to add IntestineSpill on hit
     [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
     internal static class Harmony_DamageWorker_AddInjury_ApplyDamageToPart_Intestines

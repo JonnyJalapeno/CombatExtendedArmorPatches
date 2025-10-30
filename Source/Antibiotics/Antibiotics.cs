@@ -4,6 +4,7 @@ using Verse;
 
 namespace CombatExtendedArmorPatches
 {
+    //Adds antibiotic item that slows infection progression
     [HarmonyPatch(typeof(HediffComp_Immunizable), nameof(HediffComp_Immunizable.SeverityChangePerDay))]
     public static class Patch_Immunizable_Severity_Antibiotics
     {

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 
 namespace CombatExtendedArmorPatches
 {
+    //Adds organ damage from APHE projectiles to other organs in the same body part group
     [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyToPawn")]
     [HarmonyAfter("CombatExtended.HarmonyCE")]
     public static class Patch_APHE_ReplaceSecondaryDamage
