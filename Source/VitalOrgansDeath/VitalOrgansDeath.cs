@@ -1,26 +1,32 @@
-using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
-using RimWorld.Planet;
 
 namespace CombatExtendedArmorPatches
 {
-    [HarmonyPatch(typeof(Hediff_MissingPart))]
-    [HarmonyPatch("PostAdd")]
+    [HarmonyPatch(typeof(Hediff_MissingPart), "PostAdd")]
     static class Hediff_MissingPart_WaistKillPatch
     {
         static void Postfix(Hediff_MissingPart __instance)
         {
-            if (!__instance.pawn.Dead && __instance.Part.def.tags.Any(t => t.defName == "isVital"))
+            if (__instance?.pawn == null || __instance.pawn.Dead) return;
+
+            var tags = __instance.Part.def?.tags;
+            if (tags == null) return;
+
+            for (int i = 0; i < tags.Count; i++)
             {
-                Find.World.GetComponent<KillNextTickComponent>()
-                    .ScheduleKill(__instance.pawn);
+                if (tags[i].defName == "isVital")
+                {
+                    __instance.pawn.Kill(null);
+                    break;
+                }
             }
         }
     }
+}
 
-    public class KillNextTickComponent : WorldComponent
+    /*public class KillNextTickComponent : WorldComponent
     {
         private readonly System.Collections.Generic.List<Pawn> queue =
             new System.Collections.Generic.List<Pawn>();
@@ -45,5 +51,5 @@ namespace CombatExtendedArmorPatches
             if (pawn != null && !pawn.Dead)
                 queue.Add(pawn);
         }
-    }
-}
+    }*/
+

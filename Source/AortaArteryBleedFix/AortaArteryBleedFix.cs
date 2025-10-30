@@ -1,37 +1,35 @@
 using RimWorld;
 using Verse;
 using HarmonyLib;
-using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
-
 
 namespace CombatExtendedArmorPatches
 {
-    //Adds bleeding equal to aorta/artery bleed rate for missing parts that had arteries/aorta when freshly lost
-   [HarmonyPatch(typeof(Hediff_MissingPart), "get_BleedRate")]
+    [HarmonyPatch(typeof(Hediff_MissingPart), "get_BleedRate")]
     static class Hediff_MissingPart_BleedRate_ScalePatch
     {
+        static readonly string Artery = "Artery";
+        static readonly string Aorta = "Aorta";
+
         static void Postfix(Hediff_MissingPart __instance, ref float __result)
         {
-            if (!__instance.IsFreshNonSolidExtremity)
-                return;
+            if (!__instance.IsFreshNonSolidExtremity) return;
+            var part = __instance.Part;
+            var children = part.GetDirectChildParts();
+            if (children == null) return;
 
-            var bodyparts = __instance.Part.GetDirectChildParts();
-            if (bodyparts == null)
-                return;
+            float baseBleed = part.def.bleedRate;
+            if (baseBleed <= 0f) return;
 
-            foreach (var part in bodyparts)
+            foreach (var c in children)
             {
-                if (part.def.defName.Contains("Artery") || part.def.defName.Contains("Aorta"))
+                var name = c.def.defName;
+                if (name.IndexOf(Artery) >= 0 || name.IndexOf(Aorta) >= 0)
                 {
-                    float originalBleedRate = __instance.Part.def.bleedRate;
-                    float newBleedRate = part.def.bleedRate;
-                    if (originalBleedRate > 0f)
-                        __result *= newBleedRate / originalBleedRate;
+                    float newBleed = c.def.bleedRate;
+                    if (newBleed > 0f) __result *= newBleed / baseBleed;
                     break;
                 }
             }
         }
-    } 
+    }
 }

@@ -1,45 +1,48 @@
 using RimWorld;
 using Verse;
 using HarmonyLib;
-using UnityEngine;
-using System.Reflection;
-using System.Linq;
+using System;
 
 namespace CombatExtendedArmorPatches
 {
-    // Adds increasing infection chance based on severity for intestine injuries
-    // Patch to add IntestineSpill on hit
     [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
     internal static class Harmony_DamageWorker_AddInjury_ApplyDamageToPart_Intestines
     {
-        private static readonly HediffDef intestineHediffDef =
+        private static readonly HediffDef IntestineHediffDef =
             DefDatabase<HediffDef>.GetNamed("IntestineSpill", false);
 
         [HarmonyPostfix]
         static void Postfix(Pawn pawn, DamageWorker.DamageResult result)
         {
-            if (intestineHediffDef == null || pawn == null || result == null || result?.LastHitPart?.parts == null)
+            if (IntestineHediffDef == null || pawn == null || result?.LastHitPart?.parts == null)
                 return;
+
+            var hediffSet = pawn.health?.hediffSet;
+            if (hediffSet == null) return;
 
             foreach (var part in result.LastHitPart.parts)
             {
-                if (part == null || part.def == null)
-                    continue;
-
                 if (part?.def?.defName != "Intestines") continue;
-                if (pawn.health.hediffSet.PartIsMissing(part)) continue;
+                if (hediffSet.PartIsMissing(part)) continue;
 
-                if (!pawn.health.hediffSet.hediffs.Any(h => h.def == intestineHediffDef && h.Part == part))
+                bool hasHediff = false;
+                foreach (var h in hediffSet.hediffs)
                 {
-                    var hediff = pawn.health.AddHediff(intestineHediffDef, part);
-                    if (hediff != null)
-                        hediff.Severity = Utils.CalculateSeverityForPart(part, pawn);
+                    if (h.def == IntestineHediffDef && h.Part == part)
+                    {
+                        hasHediff = true;
+                        break;
+                    }
                 }
+                if (hasHediff) continue;
+
+                var hediff = pawn.health.AddHediff(IntestineHediffDef, part);
+                if (hediff != null)
+                    hediff.Severity = Utils.CalculateSeverityForPart(part, pawn);
             }
         }
     }
 
-    // Hediff class that updates severity every second (60 ticks)
     public class Hediff_IntestineSpill : HediffWithComps
     {
         private float maxHealth;
@@ -64,7 +67,6 @@ namespace CombatExtendedArmorPatches
         }
     }
 
-    // Comp properties for scaling infection by severity
     public class HediffCompProperties_SeverityInfectionBoost : HediffCompProperties
     {
         public float baseMultiplier = 0.1f;
@@ -76,11 +78,10 @@ namespace CombatExtendedArmorPatches
         }
     }
 
-    // Comp logic that scales infection chance with severity
     public class HediffComp_SeverityInfectionBoost : HediffComp
     {
-        private static readonly FieldInfo fi_infectionChance =
-            typeof(HediffCompProperties_Infecter).GetField("infectionChance", 
+        private static readonly System.Reflection.FieldInfo fi_infectionChance =
+            typeof(HediffCompProperties_Infecter).GetField("infectionChance",
                 System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
 
         public HediffCompProperties_SeverityInfectionBoost Props => (HediffCompProperties_SeverityInfectionBoost)props;
@@ -94,7 +95,7 @@ namespace CombatExtendedArmorPatches
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
-            if (parent.Severity > 0f) // skip if no severity to save cycles
+            if (parent.Severity > 0f)
                 UpdateInfectionChance();
         }
 
@@ -102,13 +103,21 @@ namespace CombatExtendedArmorPatches
         {
             if (parent == null || parent.comps.NullOrEmpty()) return;
 
-            var infecter = parent.comps.Find(c => c is HediffComp_Infecter) as HediffComp_Infecter;
+            HediffComp_Infecter infecter = null;
+            foreach (var c in parent.comps)
+            {
+                if (c is HediffComp_Infecter ic)
+                {
+                    infecter = ic;
+                    break;
+                }
+            }
             if (infecter == null) return;
 
             var propsInfecter = (HediffCompProperties_Infecter)infecter.props;
             float factor = Props.baseMultiplier + (Props.maxMultiplier - Props.baseMultiplier) * parent.Severity;
-            fi_infectionChance.SetValue(propsInfecter, Mathf.Clamp01(factor));
+            float clampedFactor = Math.Max(0f, Math.Min(1f, factor));
+            fi_infectionChance.SetValue(propsInfecter, clampedFactor);
         }
     }
-    
 }

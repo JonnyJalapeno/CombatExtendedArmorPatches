@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using HarmonyLib;
 using Verse;
 
@@ -29,4 +29,4 @@ namespace CombatExtendedArmorPatches
             return null;
         }
     }
-}
+}*/

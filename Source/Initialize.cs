@@ -1,10 +1,6 @@
 using RimWorld;
 using Verse;
 using HarmonyLib;
-using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
-
 
 namespace CombatExtendedArmorPatches
 {
@@ -18,6 +14,7 @@ namespace CombatExtendedArmorPatches
             Log.Message("[CombatExtendedArmorPatches] patch applied");
         }
     }
+}
 
     /*[HarmonyPatch(typeof(HediffGiverUtility), "TryApply")]
     public static class HediffGiverUtility_TryApply_Patch
@@ -52,6 +49,6 @@ namespace CombatExtendedArmorPatches
         }
     }*/
     
-}
+
 
 

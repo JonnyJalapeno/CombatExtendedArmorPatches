@@ -4,6 +4,20 @@ namespace CombatExtendedArmorPatches
 {
     public class HediffComp_Antibiotic : HediffComp
     {
-        public float InfectionSlowdownFactor => (props as HediffCompProperties_Antibiotic)?.infectionSlowdownFactor ?? 0.5f;
+        private HediffCompProperties_Antibiotic cachedProps;
+        private bool cached;
+
+        public float InfectionSlowdownFactor
+        {
+            get
+            {
+                if (!cached)
+                {
+                    cachedProps = props as HediffCompProperties_Antibiotic;
+                    cached = true;
+                }
+                return cachedProps != null ? cachedProps.infectionSlowdownFactor : 0.5f;
+            }
+        }
     }
 }
