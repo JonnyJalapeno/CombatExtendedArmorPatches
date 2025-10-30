@@ -705,7 +705,7 @@
 									<li>
 										<def>Calf</def>
 										<customLabel>left calf</customLabel>
-										<coverage>0.35</coverage>
+										<coverage>0.42</coverage>
 										<height>Bottom</height>
 										<groups>
 											<li>Legs</li>
@@ -832,7 +832,7 @@
 									<li>
 										<def>Calf</def>
 										<customLabel>right calf</customLabel>
-										<coverage>0.35</coverage>
+										<coverage>0.42</coverage>
 										<height>Bottom</height>
 										<groups>
 											<li>Legs</li>

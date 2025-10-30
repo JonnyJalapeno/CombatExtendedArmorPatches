@@ -58,6 +58,7 @@ namespace CombatExtendedArmorPatches
 
                         foreach (var sib in selected)
                         {
+                            if (pawn.Dead) break;
                             var sibDinfo = sec.GetDinfo(dinfo);
                             sibDinfo.SetHitPart(sib);
                             sibDinfo.SetAmount(sibDinfo.Amount * Rand.Range(0f, 0.5f));

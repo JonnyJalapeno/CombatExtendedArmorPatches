@@ -1,10 +1,8 @@
+using System.Linq;
+using HarmonyLib;
 using RimWorld;
 using Verse;
-using HarmonyLib;
-using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
-
+using RimWorld.Planet;
 
 namespace CombatExtendedArmorPatches
 {
@@ -14,10 +12,38 @@ namespace CombatExtendedArmorPatches
     {
         static void Postfix(Hediff_MissingPart __instance)
         {
-            if (__instance.Part.def.tags.Any(tag => tag.defName == "isVital") && !__instance.pawn.Dead)
+            if (!__instance.pawn.Dead && __instance.Part.def.tags.Any(t => t.defName == "isVital"))
             {
-                __instance.pawn.Kill(null);
+                Find.World.GetComponent<KillNextTickComponent>()
+                    .ScheduleKill(__instance.pawn);
             }
+        }
+    }
+
+    public class KillNextTickComponent : WorldComponent
+    {
+        private readonly System.Collections.Generic.List<Pawn> queue =
+            new System.Collections.Generic.List<Pawn>();
+
+        public KillNextTickComponent(World world) : base(world) { }
+
+        public override void WorldComponentTick()
+        {
+            if (queue.Count == 0) return;
+
+            for (int i = queue.Count - 1; i >= 0; i--)
+            {
+                var pawn = queue[i];
+                if (pawn != null && !pawn.Dead)
+                    pawn.Kill(null);
+                queue.RemoveAt(i);
+            }
+        }
+
+        public void ScheduleKill(Pawn pawn)
+        {
+            if (pawn != null && !pawn.Dead)
+                queue.Add(pawn);
         }
     }
 }

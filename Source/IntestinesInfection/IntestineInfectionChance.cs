@@ -18,11 +18,14 @@ namespace CombatExtendedArmorPatches
         [HarmonyPostfix]
         static void Postfix(Pawn pawn, DamageWorker.DamageResult result)
         {
-            if (intestineHediffDef == null || pawn == null || result?.LastHitPart == null)
+            if (intestineHediffDef == null || pawn == null || result == null || result?.LastHitPart?.parts == null)
                 return;
 
             foreach (var part in result.LastHitPart.parts)
             {
+                if (part == null || part.def == null)
+                    continue;
+
                 if (part?.def?.defName != "Intestines") continue;
                 if (pawn.health.hediffSet.PartIsMissing(part)) continue;
 

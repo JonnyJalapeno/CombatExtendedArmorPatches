@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CombatExtendedArmorPatches")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4704d272b0edf086925416a9bd54018372a537a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb5e50182849ab0172fac432e2e40b98049c5e44")]
 [assembly: System.Reflection.AssemblyProductAttribute("CombatExtendedArmorPatches")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CombatExtendedArmorPatches")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
