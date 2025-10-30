@@ -180,7 +180,7 @@
 		<defName>IliacArtery</defName>
 		<label>iliac artery</label>
 		<hitPoints>25</hitPoints>
-		<bleedRate>18</bleedRate>
+		<bleedRate>15</bleedRate>
 		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
 		<canScarify>true</canScarify>
@@ -210,7 +210,7 @@
 		<defName>AxillaryArtery</defName>
 		<label>axillary artery</label>
 		<hitPoints>25</hitPoints>
-		<bleedRate>7</bleedRate>
+		<bleedRate>6</bleedRate>
 		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
 		<canScarify>true</canScarify>
@@ -225,7 +225,7 @@
 		<defName>BrachialArtery</defName>
 		<label>brachial artery</label>
 		<hitPoints>25</hitPoints>
-		<bleedRate>3.5</bleedRate>
+		<bleedRate>2.4</bleedRate>
 		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
 		<canScarify>true</canScarify>
@@ -240,7 +240,7 @@
 		<defName>CarotidArtery</defName>
 		<label>carotid artery</label>
 		<hitPoints>25</hitPoints>
-		<bleedRate>8</bleedRate>
+		<bleedRate>7.2</bleedRate>
 		<permanentInjuryChanceFactor>5</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
 		<canScarify>true</canScarify>

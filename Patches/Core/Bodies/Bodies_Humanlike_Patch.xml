@@ -403,6 +403,8 @@
 						  <flipGraphic>true</flipGraphic>						 
 						  <groups>
 							<li>Hands</li>
+							<li>Arms</li>
+							<li>LeftHand</li>
 						  </groups>
 						  <parts>
 							<li>
@@ -411,7 +413,7 @@
 							  <coverage>0.06</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>LeftHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -420,7 +422,7 @@
 							  <coverage>0.07</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>LeftHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -429,8 +431,7 @@
 							  <coverage>0.08</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>LeftHand</li>
-								<li>MiddleFingers</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -439,7 +440,7 @@
 							  <coverage>0.07</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>LeftHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -448,7 +449,7 @@
 							  <coverage>0.08</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>LeftHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 						  </parts>
@@ -549,6 +550,8 @@
 						  <height>Bottom</height>
 						  <groups>
 							<li>Hands</li>
+							<li>Arms</li>
+							<li>RightHand</li>
 						  </groups>
 						  <parts>
 							<li>
@@ -557,7 +560,7 @@
 							  <coverage>0.06</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>RightHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -566,7 +569,7 @@
 							  <coverage>0.07</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>RightHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -575,8 +578,7 @@
 							  <coverage>0.08</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>RightHand</li>
-								<li>MiddleFingers</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -585,7 +587,7 @@
 							  <coverage>0.07</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>RightHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 							<li>
@@ -594,7 +596,7 @@
 							  <coverage>0.08</coverage>
 							  <groups>
 								<li>Hands</li>
-								<li>RightHand</li>
+								<li>Arms</li>
 							  </groups>
 							</li>
 						    </parts>
@@ -612,6 +614,7 @@
 				<height>Bottom</height>
 				<coverage>0.35</coverage>
 				<groups>
+					<li>Legs</li>
 					<li>Pelvis</li>
 				</groups>
 				<parts>
@@ -642,6 +645,7 @@
 						<height>Bottom</height>
 						<coverage>0.05</coverage>
 						<groups>
+							<li>Legs</li>
 							<li>Groin</li>
 						</groups>
 						<parts>
@@ -649,6 +653,7 @@
 								<def>Genitals</def>
 								<coverage>0.5</coverage>
 								<groups>
+									<li>Legs</li>
 									<li>Groin</li>
 								</groups>
 							</li>
@@ -725,6 +730,7 @@
 												<flipGraphic>true</flipGraphic>
 												<groups>
 													<li>Feet</li>
+													<li>Legs</li>
 												</groups>
 												<parts>
 													<li>
@@ -733,6 +739,7 @@
 														<coverage>0.06</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -741,6 +748,7 @@
 														<coverage>0.07</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -749,6 +757,7 @@
 														<coverage>0.08</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -757,6 +766,7 @@
 														<coverage>0.09</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -765,6 +775,7 @@
 														<coverage>0.09</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 												</parts>
@@ -846,6 +857,7 @@
 												<flipGraphic>true</flipGraphic>
 												<groups>
 													<li>Feet</li>
+													<li>Legs</li>
 												</groups>
 												<parts>
 													<li>
@@ -854,6 +866,7 @@
 														<coverage>0.06</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -862,6 +875,7 @@
 														<coverage>0.07</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -870,6 +884,7 @@
 														<coverage>0.08</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -878,6 +893,7 @@
 														<coverage>0.09</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 													<li>
@@ -886,6 +902,7 @@
 														<coverage>0.09</coverage>
 														<groups>
 															<li>Feet</li>
+															<li>Legs</li>
 														</groups>
 													</li>
 												</parts>

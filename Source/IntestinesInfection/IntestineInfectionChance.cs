@@ -3,6 +3,7 @@ using Verse;
 using HarmonyLib;
 using UnityEngine;
 using System.Reflection;
+using System.Linq;
 
 namespace CombatExtendedArmorPatches
 {
@@ -22,13 +23,14 @@ namespace CombatExtendedArmorPatches
 
             foreach (var part in result.LastHitPart.parts)
             {
-                if (part?.def?.defName != "Intestines")
-                    continue;
+                if (part?.def?.defName != "Intestines") continue;
+                if (pawn.health.hediffSet.PartIsMissing(part)) continue;
 
                 if (!pawn.health.hediffSet.hediffs.Any(h => h.def == intestineHediffDef && h.Part == part))
                 {
                     var hediff = pawn.health.AddHediff(intestineHediffDef, part);
-                    hediff.Severity = Utils.CalculateSeverityForPart(part, pawn);
+                    if (hediff != null)
+                        hediff.Severity = Utils.CalculateSeverityForPart(part, pawn);
                 }
             }
         }

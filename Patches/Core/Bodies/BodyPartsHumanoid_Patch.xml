@@ -28,7 +28,7 @@
 			<hitPoints>50</hitPoints>
 			<skinCovered>true</skinCovered>
 			<canScarify>true</canScarify>
-			<bleedRate>1.5</bleedRate>
+			<bleedRate>1.0</bleedRate>
 			<tags>
 				<li>isVital</li>
 			</tags>
@@ -45,7 +45,7 @@
 			<hitPoints>40</hitPoints>
 			<skinCovered>true</skinCovered>
 			<canScarify>true</canScarify>
-			<bleedRate>1.5</bleedRate>
+			<bleedRate>1.0</bleedRate>
 			<tags>
 			  <li>MovingLimbSegment</li>
 			  <li>Mirrored</li>
@@ -82,7 +82,7 @@
 		<hitPoints>30</hitPoints>
 		<skinCovered>true</skinCovered>
 		<canScarify>true</canScarify>
-		<bleedRate>1.5</bleedRate>
+		<bleedRate>1.0</bleedRate>
 		<tags>
 		  <li>MovingLimbCore</li>
 		  <li>Mirrored</li>
@@ -100,7 +100,7 @@
 		<hitPoints>30</hitPoints>
 		<skinCovered>true</skinCovered>
 		<canScarify>true</canScarify>
-		<bleedRate>1.5</bleedRate>
+		<bleedRate>1.0</bleedRate>
 		<tags>
 		  <li>MovingLimbSegment</li>
 		  <li>Mirrored</li>
@@ -118,7 +118,7 @@
 		<hitPoints>30</hitPoints>
 		<skinCovered>true</skinCovered>
 		<canScarify>true</canScarify>
-		<bleedRate>1.5</bleedRate>
+		<bleedRate>1.0</bleedRate>
 		<tags>
 		  <li>ManipulationLimbSegment</li>
 		  <li>Mirrored</li>
@@ -136,7 +136,7 @@
 		<hitPoints>25</hitPoints>
 		<skinCovered>true</skinCovered>
 		<canScarify>true</canScarify>
-		<bleedRate>1.5</bleedRate>
+		<bleedRate>1.0</bleedRate>
 	  </BodyPartDef>
 	</value>
   </Operation>
@@ -160,11 +160,11 @@
 	<value>
 	  <BodyPartDef>
 		<defName>Pelvis</defName>
-		<label>Hips</label>
+		<label>hips</label>
 		<hitPoints>50</hitPoints>
 		<skinCovered>true</skinCovered>
 		<canScarify>true</canScarify>
-		<bleedRate>1.5</bleedRate>
+		<bleedRate>1.0</bleedRate>
 		<tags>
 			<li>isVital</li>
 		</tags>
@@ -184,7 +184,7 @@
   <Operation Class="PatchOperationReplace">
 	<xpath>/Defs/BodyPartDef[defName='Arm']/label</xpath>
 	<value>
-	  <label>lower arm</label>
+	  <label>forearm</label>
 	</value>
   </Operation>
 	

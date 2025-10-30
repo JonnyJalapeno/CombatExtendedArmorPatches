@@ -20,7 +20,7 @@
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
           <defName>UpperArms</defName>
-          <label>arms</label>
+          <label>upper arms</label>
           <listOrder>122</listOrder>
         </BodyPartGroupDef>
 		<BodyPartGroupDef>
@@ -51,10 +51,10 @@
       </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
+  <Operation Class="PatchOperationReplace">
 	  <xpath>/Defs/BodyPartGroupDef[defName='Waist']/label</xpath>
 	  <value>
-		<label>waist</label>
+		<label>abdomen</label>
 	  </value>
 	</Operation>
 	
